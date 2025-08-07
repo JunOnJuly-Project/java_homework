@@ -1,0 +1,65 @@
+1. 1 ( 인터페이스는 객체를 생성할 수 없다. )
+2. 3 ( 디폴트 메소드는 재정의할 수 있다. )
+3. 4 ( 구현 객체라면 자동변환된다. )
+4. 1, 2, 3, 4
+5. public void powerOn() {
+	System.out.print("TV를 켰습니다.")
+   }
+6. 
+public Cat implements Soundable {
+	public String sound() {
+		return "야옹";
+	}
+   }
+
+public Dog implements Soundable {
+	public String sound() {
+		return "멍멍";
+	}
+   }
+
+7.
+public interface DataAccessObject {
+	void select();
+	void insert();
+	void update();
+	void delete();
+}
+
+public OracleDao implements DataAccessObject {
+	void select() {
+		System.out.println("Oracle DB에서 검색");
+	}
+
+	void insert() {
+		System.out.println("Oracle DB에서 삽입");
+	}
+
+	void update() {
+		System.out.println("Oracle DB에서 수정");
+	}
+
+	void delete() {
+		System.out.println("Oracle DB에서 삭제");
+	}
+}
+
+public MySqlDao implements DataAccessObject {
+	void select() {
+		System.out.println("MySql DB에서 검색");
+	}
+
+	void insert() {
+		System.out.println("MySql DB에서 삽입");
+	}
+
+	void update() {
+		System.out.println("MySql DB에서 수정");
+	}
+
+	void delete() {
+		System.out.println("MySql DB에서 삭제");
+	}
+}
+
+8. a instanceOf C c
