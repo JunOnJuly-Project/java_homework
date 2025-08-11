@@ -1,0 +1,25 @@
+/**
+ * 2025-08-08
+ * 11 장 확인문제
+ * 성지훈
+ */
+
+// 1번 - 4 ( 사용자 지정 예외도 처리할 수 있다 )
+// 2번 - 3 ( finally 블록은 무조건 실행된다 )
+// 3번 - 4 ( 새로운 예외 발생은 throw )
+// 4번 - 2 ( 예외를 떠넘기는 키워드는 throws )
+// 5번 - 3 ( Exception 에서 모든 경우를 처리해 뒤에 다른 exception 이 올 수 없음 )
+/* 6번 - 
+ * 10
+ * 숫자로 변환할 수 없음
+ * 10
+ * 인덱스를 초과했음
+ * 10
+ */
+/* 7번
+ * super(message);
+ * super(message);
+ * throws Exception
+ * throw New NotExistIDException("아이디가 존재하지 않습니다");
+ * throw New WrongPasswordException("패스워드가 틀립니다.");
+ */
